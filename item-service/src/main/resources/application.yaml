@@ -10,13 +10,16 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: ${hm.db.pw}
+#Mybatis-plus配置
 mybatis-plus:
   configuration:
+    #枚举类型处理器
     default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
   global-config:
     db-config:
-      update-strategy: not_null
-      id-type: auto
+      update-strategy: not_null #更新策略 只更新费控字段
+      id-type: auto  #主键id的自增类型【默认是雪花算法】 可以改为auto/在pojo实体类属性上#TableId(type=IdType.AUTO)
+#log日志
 logging:
   level:
     com.hmall: debug
@@ -24,11 +27,12 @@ logging:
     dateformat: HH:mm:ss:SSS
   file:
     path: "logs/${spring.application.name}"
+#swagger接口
 knife4j:
   enable: true
   openapi:
-    title: 黑马商城接口文档
-    description: "黑马商城接口文档"
+    title: 黑马商城商品管理接口文档
+    description: "黑马商城商品管理接口文档"
     email: zhanghuyi@itcast.cn
     concat: 虎哥
     url: https://www.itcast.cn
@@ -38,17 +42,4 @@ knife4j:
         group-name: default
         api-rule: package
         api-rule-resources:
-          - com.hmall.controller
-hm:
-  jwt:
-    location: classpath:hmall.jks
-    alias: hmall
-    password: hmall123
-    tokenTTL: 30m
-  auth:
-    excludePaths:
-      - /search/**
-      - /users/login
-      - /items/**
-      - /hi
-# keytool -genkeypair -alias hmall -keyalg RSA -keypass hmall123 -keystore hmall.jks -storepass hmall123
+          - com.hmall.item.controller
