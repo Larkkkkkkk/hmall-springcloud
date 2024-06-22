@@ -1,0 +1,20 @@
+server:
+  port: 8082
+feign:
+  okhttp:
+    enabled: true # 开启OKHttp连接池支持
+  sentinel:
+    enabled: true # 开启feign对sentinel的支持
+hm:
+  swagger:
+    title: "购物车服务接口文档"
+    package: com.hmall.cart.controller
+  db:
+    database: hm-cart
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090  # sentinel控制台地址
+      # 因为restful风格，如果不设置的话同一个controller下的接口都是一个资源
+      http-method-specify: true #是否设置请求方式作为资源名称
