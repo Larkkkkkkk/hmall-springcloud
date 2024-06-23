@@ -7,3 +7,298 @@
 00:02:34:260 DEBUG 23804 --- [http-nio-8084-exec-4] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
 00:02:34:261 DEBUG 23804 --- [http-nio-8084-exec-4] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: rose(String)
 00:02:34:263 DEBUG 23804 --- [http-nio-8084-exec-4] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+00:39:37:654 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+00:39:37:659 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: rose(String)
+00:39:37:674 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+00:39:56:708 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+00:39:56:709 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+00:39:56:721 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+00:40:05:247  INFO 23804 --- [http-nio-8084-exec-6] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+00:40:05:301 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+00:40:05:305 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+00:40:05:370 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+00:40:05:484 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 95900 where id = ?
+00:40:05:484 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+00:40:05:516 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+00:40:05:517  INFO 23804 --- [http-nio-8084-exec-6] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+00:40:05:749  INFO 23804 --- [rpcDispatch_RMROLE_1_1_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299865251,branchId=36562910299865257,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+00:40:05:753  INFO 23804 --- [rpcDispatch_RMROLE_1_1_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299865251 36562910299865257 jdbc:mysql://192.168.92.129:3306/hm-user null
+00:40:05:756  INFO 23804 --- [rpcDispatch_RMROLE_1_1_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299865251-36562910299865257 was committed.
+00:40:05:758  INFO 23804 --- [rpcDispatch_RMROLE_1_1_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+00:40:05:769  INFO 23804 --- [rpcDispatch_RMROLE_1_2_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299865251,branchId=36562910299865259,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+00:40:05:769  INFO 23804 --- [rpcDispatch_RMROLE_1_2_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299865251 36562910299865259 jdbc:mysql://192.168.92.129:3306/hm-user null
+00:40:05:772  INFO 23804 --- [rpcDispatch_RMROLE_1_2_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299865251-36562910299865259 was committed.
+00:40:05:773  INFO 23804 --- [rpcDispatch_RMROLE_1_2_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+00:47:12:439 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+00:47:12:439 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+00:47:12:441 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+00:47:30:737  INFO 23804 --- [http-nio-8084-exec-5] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+00:47:30:739 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+00:47:30:739 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+00:47:30:759 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+00:47:30:825 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 95900 where id = ?
+00:47:30:825 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+00:47:30:843 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+00:47:30:843  INFO 23804 --- [http-nio-8084-exec-5] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+00:47:30:904  INFO 23804 --- [rpcDispatch_RMROLE_1_3_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299865547,branchId=36562910299865551,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+00:47:30:904  INFO 23804 --- [rpcDispatch_RMROLE_1_3_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299865547 36562910299865551 jdbc:mysql://192.168.92.129:3306/hm-user null
+00:47:30:905  INFO 23804 --- [rpcDispatch_RMROLE_1_3_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299865547-36562910299865551 was committed.
+00:47:30:906  INFO 23804 --- [rpcDispatch_RMROLE_1_3_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+00:47:30:910  INFO 23804 --- [rpcDispatch_RMROLE_1_4_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299865547,branchId=36562910299865553,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+00:47:30:910  INFO 23804 --- [rpcDispatch_RMROLE_1_4_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299865547 36562910299865553 jdbc:mysql://192.168.92.129:3306/hm-user null
+00:47:30:912  INFO 23804 --- [rpcDispatch_RMROLE_1_4_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299865547-36562910299865553 was committed.
+00:47:30:912  INFO 23804 --- [rpcDispatch_RMROLE_1_4_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+00:48:21:415 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+00:48:21:416 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+00:48:21:417 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+00:48:28:306  INFO 23804 --- [http-nio-8084-exec-9] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+00:48:28:308 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+00:48:28:308 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+00:48:28:333 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+00:48:28:419 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 78900 where id = ?
+00:48:28:419 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+00:48:28:440 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+00:48:28:440  INFO 23804 --- [http-nio-8084-exec-9] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+00:48:28:567  INFO 23804 --- [rpcDispatch_RMROLE_1_5_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299865697,branchId=36562910299865701,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+00:48:28:567  INFO 23804 --- [rpcDispatch_RMROLE_1_5_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299865697 36562910299865701 jdbc:mysql://192.168.92.129:3306/hm-user null
+00:48:28:569  INFO 23804 --- [rpcDispatch_RMROLE_1_5_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299865697-36562910299865701 was committed.
+00:48:28:569  INFO 23804 --- [rpcDispatch_RMROLE_1_5_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+00:48:28:573  INFO 23804 --- [rpcDispatch_RMROLE_1_6_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299865697,branchId=36562910299865707,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+00:48:28:573  INFO 23804 --- [rpcDispatch_RMROLE_1_6_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299865697 36562910299865707 jdbc:mysql://192.168.92.129:3306/hm-user null
+00:48:28:577  INFO 23804 --- [rpcDispatch_RMROLE_1_6_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299865697-36562910299865707 was committed.
+00:48:28:577  INFO 23804 --- [rpcDispatch_RMROLE_1_6_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+00:58:31:478 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+00:58:31:482 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+00:58:31:504 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+00:58:39:067  INFO 23804 --- [http-nio-8084-exec-8] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+00:58:39:070 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+00:58:39:070 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+00:58:39:103 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+00:58:39:203 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 78900 where id = ?
+00:58:39:204 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+00:58:39:243 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+00:58:39:244  INFO 23804 --- [http-nio-8084-exec-8] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+00:58:39:414  INFO 23804 --- [rpcDispatch_RMROLE_1_7_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299866108,branchId=36562910299866112,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+00:58:39:415  INFO 23804 --- [rpcDispatch_RMROLE_1_7_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299866108 36562910299866112 jdbc:mysql://192.168.92.129:3306/hm-user null
+00:58:39:417  INFO 23804 --- [rpcDispatch_RMROLE_1_7_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299866108-36562910299866112 was committed.
+00:58:39:417  INFO 23804 --- [rpcDispatch_RMROLE_1_7_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+00:58:39:425  INFO 23804 --- [rpcDispatch_RMROLE_1_8_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299866108,branchId=36562910299866114,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+00:58:39:425  INFO 23804 --- [rpcDispatch_RMROLE_1_8_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299866108 36562910299866114 jdbc:mysql://192.168.92.129:3306/hm-user null
+00:58:39:430  INFO 23804 --- [rpcDispatch_RMROLE_1_8_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299866108-36562910299866114 was committed.
+00:58:39:430  INFO 23804 --- [rpcDispatch_RMROLE_1_8_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+01:10:37:342 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+01:10:37:355 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: rose(String)
+01:10:37:375 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+01:10:44:498 DEBUG 23804 --- [http-nio-8084-exec-4] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+01:10:44:499 DEBUG 23804 --- [http-nio-8084-exec-4] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+01:10:44:506 DEBUG 23804 --- [http-nio-8084-exec-4] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+01:10:54:353  INFO 23804 --- [http-nio-8084-exec-3] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+01:10:54:357 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+01:10:54:358 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+01:10:54:394 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+01:10:54:491 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 26600 where id = ?
+01:10:54:491 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+01:10:54:524 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+01:10:54:524  INFO 23804 --- [http-nio-8084-exec-3] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+01:10:54:675  INFO 23804 --- [rpcDispatch_RMROLE_1_9_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299866394,branchId=36562910299866400,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+01:10:54:675  INFO 23804 --- [rpcDispatch_RMROLE_1_9_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299866394 36562910299866400 jdbc:mysql://192.168.92.129:3306/hm-user null
+01:10:54:677  INFO 23804 --- [rpcDispatch_RMROLE_1_9_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299866394-36562910299866400 was committed.
+01:10:54:677  INFO 23804 --- [rpcDispatch_RMROLE_1_9_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+01:10:54:692  INFO 23804 --- [rpcDispatch_RMROLE_1_10_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299866394,branchId=36562910299866402,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+01:10:54:692  INFO 23804 --- [rpcDispatch_RMROLE_1_10_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299866394 36562910299866402 jdbc:mysql://192.168.92.129:3306/hm-user null
+01:10:54:697  INFO 23804 --- [rpcDispatch_RMROLE_1_10_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299866394-36562910299866402 was committed.
+01:10:54:697  INFO 23804 --- [rpcDispatch_RMROLE_1_10_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+01:20:38:694 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+01:20:38:714 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+01:20:38:723 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+01:20:46:231  INFO 23804 --- [http-nio-8084-exec-7] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+01:20:46:236 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+01:20:46:242 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+01:20:46:282 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+01:20:46:384 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 26600 where id = ?
+01:20:46:385 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+01:20:46:408 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+01:20:46:409  INFO 23804 --- [http-nio-8084-exec-7] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+01:20:46:546  INFO 23804 --- [rpcDispatch_RMROLE_1_11_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299866680,branchId=36562910299866684,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+01:20:46:546  INFO 23804 --- [rpcDispatch_RMROLE_1_11_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299866680 36562910299866684 jdbc:mysql://192.168.92.129:3306/hm-user null
+01:20:46:549  INFO 23804 --- [rpcDispatch_RMROLE_1_11_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299866680-36562910299866684 was committed.
+01:20:46:549  INFO 23804 --- [rpcDispatch_RMROLE_1_11_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+01:20:46:556  INFO 23804 --- [rpcDispatch_RMROLE_1_12_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299866680,branchId=36562910299866686,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+01:20:46:556  INFO 23804 --- [rpcDispatch_RMROLE_1_12_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299866680 36562910299866686 jdbc:mysql://192.168.92.129:3306/hm-user null
+01:20:46:559  INFO 23804 --- [rpcDispatch_RMROLE_1_12_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299866680-36562910299866686 was committed.
+01:20:46:560  INFO 23804 --- [rpcDispatch_RMROLE_1_12_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+01:30:25:494 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+01:30:25:496 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+01:30:25:505 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+01:30:33:065  INFO 23804 --- [http-nio-8084-exec-1] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+01:30:33:068 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+01:30:33:070 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+01:30:33:092 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+01:30:33:193 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 26600 where id = ?
+01:30:33:193 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+01:30:33:214 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+01:30:33:214  INFO 23804 --- [http-nio-8084-exec-1] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+01:30:33:345  INFO 23804 --- [rpcDispatch_RMROLE_1_13_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299866966,branchId=36562910299866972,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+01:30:33:345  INFO 23804 --- [rpcDispatch_RMROLE_1_13_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299866966 36562910299866972 jdbc:mysql://192.168.92.129:3306/hm-user null
+01:30:33:347  INFO 23804 --- [rpcDispatch_RMROLE_1_13_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299866966-36562910299866972 was committed.
+01:30:33:347  INFO 23804 --- [rpcDispatch_RMROLE_1_13_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+01:30:33:352  INFO 23804 --- [rpcDispatch_RMROLE_1_14_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299866966,branchId=36562910299866974,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+01:30:33:353  INFO 23804 --- [rpcDispatch_RMROLE_1_14_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299866966 36562910299866974 jdbc:mysql://192.168.92.129:3306/hm-user null
+01:30:33:357  INFO 23804 --- [rpcDispatch_RMROLE_1_14_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299866966-36562910299866974 was committed.
+01:30:33:358  INFO 23804 --- [rpcDispatch_RMROLE_1_14_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+01:45:18:569 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+01:45:18:678 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: rose(String)
+01:45:18:693 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+01:46:05:682 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+01:46:05:683 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+01:46:05:687 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+01:46:12:002  INFO 23804 --- [http-nio-8084-exec-6] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+01:46:12:005 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+01:46:12:006 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+01:46:12:036 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+01:46:12:161 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 78900 where id = ?
+01:46:12:161 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+01:46:12:189 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+01:46:12:189  INFO 23804 --- [http-nio-8084-exec-6] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+01:46:12:333  INFO 23804 --- [rpcDispatch_RMROLE_1_15_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299867251,branchId=36562910299867255,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+01:46:12:333  INFO 23804 --- [rpcDispatch_RMROLE_1_15_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299867251 36562910299867255 jdbc:mysql://192.168.92.129:3306/hm-user null
+01:46:12:335  INFO 23804 --- [rpcDispatch_RMROLE_1_15_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299867251-36562910299867255 was committed.
+01:46:12:336  INFO 23804 --- [rpcDispatch_RMROLE_1_15_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+01:46:12:341  INFO 23804 --- [rpcDispatch_RMROLE_1_16_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299867251,branchId=36562910299867257,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+01:46:12:341  INFO 23804 --- [rpcDispatch_RMROLE_1_16_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299867251 36562910299867257 jdbc:mysql://192.168.92.129:3306/hm-user null
+01:46:12:346  INFO 23804 --- [rpcDispatch_RMROLE_1_16_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299867251-36562910299867257 was committed.
+01:46:12:347  INFO 23804 --- [rpcDispatch_RMROLE_1_16_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+12:45:04:850 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+12:45:04:864 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: rose(String)
+12:45:04:890 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+12:45:41:271 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+12:45:41:271 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+12:45:41:280 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+12:46:26:279  INFO 23804 --- [http-nio-8084-exec-1] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+12:46:26:286 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+12:46:26:286 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+12:46:26:326 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+12:46:26:409 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 78900 where id = ?
+12:46:26:410 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+12:46:26:435 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+12:46:26:435  INFO 23804 --- [http-nio-8084-exec-1] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+12:46:26:543  INFO 23804 --- [rpcDispatch_RMROLE_1_17_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299867629,branchId=36562910299867633,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+12:46:26:543  INFO 23804 --- [rpcDispatch_RMROLE_1_17_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299867629 36562910299867633 jdbc:mysql://192.168.92.129:3306/hm-user null
+12:46:26:547  INFO 23804 --- [rpcDispatch_RMROLE_1_17_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299867629-36562910299867633 was committed.
+12:46:26:547  INFO 23804 --- [rpcDispatch_RMROLE_1_17_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+12:46:26:553  INFO 23804 --- [rpcDispatch_RMROLE_1_18_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299867629,branchId=36562910299867635,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+12:46:26:553  INFO 23804 --- [rpcDispatch_RMROLE_1_18_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299867629 36562910299867635 jdbc:mysql://192.168.92.129:3306/hm-user null
+12:46:26:557  INFO 23804 --- [rpcDispatch_RMROLE_1_18_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299867629-36562910299867635 was committed.
+12:46:26:557  INFO 23804 --- [rpcDispatch_RMROLE_1_18_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:24:11:930 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+13:24:11:938 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: rose(String)
+13:24:11:999 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+13:24:20:035 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+13:24:20:036 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+13:24:20:050 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+13:24:43:878 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+13:24:44:002 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+13:24:44:005 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+13:24:51:830 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+13:24:51:831 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+13:24:51:833 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+13:25:28:036 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+13:25:28:036 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+13:25:28:043 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+13:25:34:848  INFO 23804 --- [http-nio-8084-exec-10] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+13:25:34:852 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+13:25:34:852 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+13:25:34:895 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+13:25:34:995 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 105500 where id = ?
+13:25:34:996 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+13:25:35:032 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+13:25:35:032  INFO 23804 --- [http-nio-8084-exec-10] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+13:25:35:128  INFO 23804 --- [rpcDispatch_RMROLE_1_19_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299868112,branchId=36562910299868116,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+13:25:35:128  INFO 23804 --- [rpcDispatch_RMROLE_1_19_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299868112 36562910299868116 jdbc:mysql://192.168.92.129:3306/hm-user null
+13:25:35:130  INFO 23804 --- [rpcDispatch_RMROLE_1_19_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299868112-36562910299868116 was committed.
+13:25:35:130  INFO 23804 --- [rpcDispatch_RMROLE_1_19_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:25:35:135  INFO 23804 --- [rpcDispatch_RMROLE_1_20_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299868112,branchId=36562910299868118,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+13:25:35:136  INFO 23804 --- [rpcDispatch_RMROLE_1_20_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299868112 36562910299868118 jdbc:mysql://192.168.92.129:3306/hm-user null
+13:25:35:147  INFO 23804 --- [rpcDispatch_RMROLE_1_20_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299868112-36562910299868118 was committed.
+13:25:35:148  INFO 23804 --- [rpcDispatch_RMROLE_1_20_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:31:02:353 DEBUG 23804 --- [http-nio-8084-exec-4] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+13:31:02:353 DEBUG 23804 --- [http-nio-8084-exec-4] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: rose(String)
+13:31:02:358 DEBUG 23804 --- [http-nio-8084-exec-4] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+13:31:09:728 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+13:31:09:728 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+13:31:09:730 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+13:31:22:945 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+13:31:22:945 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+13:31:22:948 DEBUG 23804 --- [http-nio-8084-exec-9] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+13:31:31:574  INFO 23804 --- [http-nio-8084-exec-2] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+13:31:31:577 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+13:31:31:577 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+13:31:31:599 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+13:31:31:705 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 95900 where id = ?
+13:31:31:705 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+13:31:31:730 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+13:31:31:730  INFO 23804 --- [http-nio-8084-exec-2] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+13:31:31:797  INFO 23804 --- [rpcDispatch_RMROLE_1_21_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299868563,branchId=36562910299868570,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+13:31:31:797  INFO 23804 --- [rpcDispatch_RMROLE_1_21_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299868563 36562910299868570 jdbc:mysql://192.168.92.129:3306/hm-user null
+13:31:31:799  INFO 23804 --- [rpcDispatch_RMROLE_1_21_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299868563-36562910299868570 was committed.
+13:31:31:799  INFO 23804 --- [rpcDispatch_RMROLE_1_21_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:31:31:805  INFO 23804 --- [rpcDispatch_RMROLE_1_22_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299868563,branchId=36562910299868572,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+13:31:31:806  INFO 23804 --- [rpcDispatch_RMROLE_1_22_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299868563 36562910299868572 jdbc:mysql://192.168.92.129:3306/hm-user null
+13:31:31:810  INFO 23804 --- [rpcDispatch_RMROLE_1_22_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299868563-36562910299868572 was committed.
+13:31:31:810  INFO 23804 --- [rpcDispatch_RMROLE_1_22_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:37:01:579 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+13:37:01:580 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: rose(String)
+13:37:01:585 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+13:37:07:346 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+13:37:07:347 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+13:37:07:349 DEBUG 23804 --- [http-nio-8084-exec-10] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+13:37:13:816  INFO 23804 --- [http-nio-8084-exec-5] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+13:37:13:818 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+13:37:13:818 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+13:37:13:840 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+13:37:13:934 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 95900 where id = ?
+13:37:13:934 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+13:37:13:970 DEBUG 23804 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+13:37:13:970  INFO 23804 --- [http-nio-8084-exec-5] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+13:37:14:034  INFO 23804 --- [rpcDispatch_RMROLE_1_23_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299868958,branchId=36562910299868962,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+13:37:14:034  INFO 23804 --- [rpcDispatch_RMROLE_1_23_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299868958 36562910299868962 jdbc:mysql://192.168.92.129:3306/hm-user null
+13:37:14:035  INFO 23804 --- [rpcDispatch_RMROLE_1_23_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299868958-36562910299868962 was committed.
+13:37:14:035  INFO 23804 --- [rpcDispatch_RMROLE_1_23_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:37:14:042  INFO 23804 --- [rpcDispatch_RMROLE_1_24_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299868958,branchId=36562910299868964,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+13:37:14:043  INFO 23804 --- [rpcDispatch_RMROLE_1_24_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299868958 36562910299868964 jdbc:mysql://192.168.92.129:3306/hm-user null
+13:37:14:047  INFO 23804 --- [rpcDispatch_RMROLE_1_24_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299868958-36562910299868964 was committed.
+13:37:14:048  INFO 23804 --- [rpcDispatch_RMROLE_1_24_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:47:13:173 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+13:47:13:262 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+13:47:13:283 DEBUG 23804 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+13:58:42:721 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+13:58:42:844 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: rose(String)
+13:58:42:862 DEBUG 23804 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+13:58:46:271 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+13:58:46:272 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+13:58:46:278 DEBUG 23804 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+13:58:55:737 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+13:58:55:738 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+13:58:55:739 DEBUG 23804 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+13:59:00:315  INFO 23804 --- [http-nio-8084-exec-8] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+13:59:00:317 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+13:59:00:318 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+13:59:00:353 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+13:59:00:462 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 26600 where id = ?
+13:59:00:463 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+13:59:00:494 DEBUG 23804 --- [http-nio-8084-exec-8] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+13:59:00:494  INFO 23804 --- [http-nio-8084-exec-8] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+13:59:00:585  INFO 23804 --- [rpcDispatch_RMROLE_1_25_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299869407,branchId=36562910299869411,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+13:59:00:585  INFO 23804 --- [rpcDispatch_RMROLE_1_25_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299869407 36562910299869411 jdbc:mysql://192.168.92.129:3306/hm-user null
+13:59:00:587  INFO 23804 --- [rpcDispatch_RMROLE_1_25_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299869407-36562910299869411 was committed.
+13:59:00:587  INFO 23804 --- [rpcDispatch_RMROLE_1_25_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:59:00:595  INFO 23804 --- [rpcDispatch_RMROLE_1_26_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299869407,branchId=36562910299869413,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-user,applicationData=null
+13:59:00:595  INFO 23804 --- [rpcDispatch_RMROLE_1_26_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299869407 36562910299869413 jdbc:mysql://192.168.92.129:3306/hm-user null
+13:59:00:599  INFO 23804 --- [rpcDispatch_RMROLE_1_26_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299869407-36562910299869413 was committed.
+13:59:00:599  INFO 23804 --- [rpcDispatch_RMROLE_1_26_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+14:00:50:713 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+14:00:50:713 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: rose(String)
+14:00:50:715 DEBUG 23804 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+14:00:52:146 DEBUG 23804 --- [http-nio-8084-exec-4] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+14:00:52:146 DEBUG 23804 --- [http-nio-8084-exec-4] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+14:00:52:149 DEBUG 23804 --- [http-nio-8084-exec-4] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0

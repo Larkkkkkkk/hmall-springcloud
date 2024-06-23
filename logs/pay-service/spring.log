@@ -2129,3 +2129,291 @@ Caused by: com.rabbitmq.client.ShutdownSignalException: connection error; protoc
 12:44:57:547  INFO 82784 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x42f95699, L:/192.168.92.1:64786 ! R:/192.168.92.129:8099]
 12:44:57:547  INFO 82784 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x42f95699, L:/192.168.92.1:64786 ! R:/192.168.92.129:8099]) will closed
 12:44:57:547  INFO 82784 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x42f95699, L:/192.168.92.1:64786 ! R:/192.168.92.129:8099]) will closed
+12:45:01:833  INFO 84836 --- [main] com.hmall.pay.PayApplication             : The following 1 profile is active: "local"
+12:45:02:497  INFO 84836 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5b1be99a-398d-320e-94d6-7a84f2926f03
+12:45:02:530  INFO 84836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:45:02:530  INFO 84836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:45:02:531  INFO 84836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:45:02:546  INFO 84836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:45:02:548  INFO 84836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:45:02:549  INFO 84836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:45:02:549  INFO 84836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$568/0x0000000800647c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:45:02:549  INFO 84836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:45:02:551  INFO 84836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:45:02:552  INFO 84836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:45:02:554  INFO 84836 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+12:45:02:581  INFO 84836 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+12:45:02:584  INFO 84836 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+12:45:02:614  INFO 84836 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+12:45:02:648  INFO 84836 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+12:45:02:782  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 1d804bd6-7fc0-48f0-b1d9-43483d1acd85
+12:45:02:782  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [1d804bd6-7fc0-48f0-b1d9-43483d1acd85] RpcClient init label, labels = {module=naming, source=sdk}
+12:45:02:784  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [1d804bd6-7fc0-48f0-b1d9-43483d1acd85] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+12:45:02:784  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [1d804bd6-7fc0-48f0-b1d9-43483d1acd85] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+12:45:02:784  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [1d804bd6-7fc0-48f0-b1d9-43483d1acd85] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+12:45:02:784  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [1d804bd6-7fc0-48f0-b1d9-43483d1acd85] Try to connect to server on start up, server: {serverIp = '192.168.92.129', server main port = 8848}
+12:45:02:911  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [1d804bd6-7fc0-48f0-b1d9-43483d1acd85] Success to connect to server [192.168.92.129:8848] on start up, connectionId = 1718906165379_192.168.92.1_51125
+12:45:02:911  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [1d804bd6-7fc0-48f0-b1d9-43483d1acd85] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+12:45:02:911  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [1d804bd6-7fc0-48f0-b1d9-43483d1acd85] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$476/0x000000080042e440
+12:45:02:911  INFO 84836 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1d804bd6-7fc0-48f0-b1d9-43483d1acd85] Notify connected event to listeners.
+12:45:02:939  INFO 84836 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.92.129:8099
+12:45:03:119  INFO 84836 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.92.129:8099,msg:< RegisterTMRequest{applicationId='pay-service', transactionServiceGroup='hmall'} >
+12:45:03:351  INFO 84836 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0xcdde0e53, L:/192.168.92.1:51128 - R:/192.168.92.129:8099]
+12:45:03:354  INFO 84836 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 41 ms, version:1.5.2,role:TMROLE,channel:[id: 0xcdde0e53, L:/192.168.92.1:51128 - R:/192.168.92.129:8099]
+12:45:03:354  INFO 84836 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[pay-service] txServiceGroup[hmall]
+12:45:03:362  INFO 84836 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+12:45:03:362  INFO 84836 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+12:45:03:365  INFO 84836 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+12:45:03:366  INFO 84836 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[pay-service] txServiceGroup[hmall]
+12:45:03:366  INFO 84836 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+12:45:03:367  INFO 84836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:45:03:388  INFO 84836 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [1d804bd6-7fc0-48f0-b1d9-43483d1acd85] Receive server push request, request = NotifySubscriberRequest, requestId = 353
+12:45:03:395  INFO 84836 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [1d804bd6-7fc0-48f0-b1d9-43483d1acd85] Ack server push request, request = NotifySubscriberRequest, requestId = 353
+12:45:03:414  INFO 84836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:45:03:415  INFO 84836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:45:03:530  INFO 84836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+12:45:03:535  INFO 84836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+12:45:03:536  INFO 84836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+12:45:03:612  INFO 84836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+12:45:03:612  INFO 84836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1769 ms
+12:45:03:738  INFO 84836 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+12:45:03:774  INFO 84836 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+12:45:03:955  INFO 84836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+12:45:04:084  INFO 84836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+12:45:04:093  INFO 84836 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.92.129:8099
+12:45:04:093  INFO 84836 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://192.168.92.129:3306/hm-pay
+12:45:04:093  INFO 84836 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.92.129:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://192.168.92.129:3306/hm-pay', applicationId='pay-service', transactionServiceGroup='hmall'} >
+12:45:04:108  INFO 84836 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x1e5998c4, L:/192.168.92.1:51136 - R:/192.168.92.129:8099]
+12:45:04:108  INFO 84836 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 11 ms, version:1.5.2,role:RMROLE,channel:[id: 0x1e5998c4, L:/192.168.92.1:51136 - R:/192.168.92.129:8099]
+12:45:04:758  INFO 84836 --- [main] i.s.s.a.GlobalTransactionScanner         : Bean[com.hmall.pay.service.impl.PayOrderServiceImpl$$EnhancerBySpringCGLIB$$ea1c1625] with name [payOrderServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+12:45:05:326  INFO 84836 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+12:45:05:696  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 9c0990b6-e63e-4652-839b-2161c8d100e7
+12:45:05:696  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [9c0990b6-e63e-4652-839b-2161c8d100e7] RpcClient init label, labels = {module=naming, source=sdk}
+12:45:05:696  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [9c0990b6-e63e-4652-839b-2161c8d100e7] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+12:45:05:696  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [9c0990b6-e63e-4652-839b-2161c8d100e7] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+12:45:05:696  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [9c0990b6-e63e-4652-839b-2161c8d100e7] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+12:45:05:696  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [9c0990b6-e63e-4652-839b-2161c8d100e7] Try to connect to server on start up, server: {serverIp = '192.168.92.129', server main port = 8848}
+12:45:05:814  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [9c0990b6-e63e-4652-839b-2161c8d100e7] Success to connect to server [192.168.92.129:8848] on start up, connectionId = 1718906168532_192.168.92.1_51157
+12:45:05:814  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [9c0990b6-e63e-4652-839b-2161c8d100e7] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+12:45:05:814  INFO 84836 --- [main] com.alibaba.nacos.common.remote.client   : [9c0990b6-e63e-4652-839b-2161c8d100e7] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$476/0x000000080042e440
+12:45:05:814  INFO 84836 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [9c0990b6-e63e-4652-839b-2161c8d100e7] Notify connected event to listeners.
+12:45:05:834  INFO 84836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+12:45:05:843  INFO 84836 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP pay-service 192.168.92.1:8086 register finished
+12:45:06:064  INFO 84836 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+12:45:06:066  INFO 84836 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+12:45:06:079  INFO 84836 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+12:45:06:129  INFO 84836 --- [main] com.hmall.pay.PayApplication             : Started PayApplication in 6.692 seconds (JVM running for 7.563)
+12:45:06:133  INFO 84836 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service, group=DEFAULT_GROUP
+12:45:06:133  INFO 84836 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service.yaml, group=DEFAULT_GROUP
+12:45:06:133  INFO 84836 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service-local.yaml, group=DEFAULT_GROUP
+12:45:06:350  INFO 84836 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [9c0990b6-e63e-4652-839b-2161c8d100e7] Receive server push request, request = NotifySubscriberRequest, requestId = 357
+12:45:06:357  INFO 84836 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [9c0990b6-e63e-4652-839b-2161c8d100e7] Ack server push request, request = NotifySubscriberRequest, requestId = 357
+12:45:49:863  INFO 84836 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:45:49:863  INFO 84836 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+12:45:49:864  INFO 84836 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+12:45:49:985 DEBUG 84836 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+12:45:50:004 DEBUG 84836 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1804737601949712386(Long)
+12:45:50:025 DEBUG 84836 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+12:45:50:062 DEBUG 84836 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+12:45:50:064 DEBUG 84836 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1804737604856377347(Long), 1804737601949712386(Long), 1804737604856377346(Long), 2(Long), balance(String), 78900(Integer), 5(Integer), 1(Integer), 2024-06-23T14:45:50.057746200(LocalDateTime)
+12:45:50:072 DEBUG 84836 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+12:46:26:123  INFO 84836 --- [http-nio-8086-exec-2] io.seata.tm.TransactionManagerHolder     : TransactionManager Singleton io.seata.tm.DefaultTransactionManager@10acc532
+12:46:26:141  INFO 84836 --- [http-nio-8086-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.92.129:8099:36562910299867629]
+12:46:26:149 DEBUG 84836 --- [http-nio-8086-exec-2] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+12:46:26:150 DEBUG 84836 --- [http-nio-8086-exec-2] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1804737604856377347(Long)
+12:46:26:177 DEBUG 84836 --- [http-nio-8086-exec-2] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+12:46:26:179 DEBUG 84836 --- [http-nio-8086-exec-2] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=78900 HTTP/1.1
+12:46:26:179 DEBUG 84836 --- [http-nio-8086-exec-2] com.hmall.api.client.UserClient          : [UserClient#deductMoney] user-info: 2
+12:46:26:179 DEBUG 84836 --- [http-nio-8086-exec-2] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> END HTTP (0-byte body)
+12:46:26:441 DEBUG 84836 --- [http-nio-8086-exec-2] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200 (261ms)
+12:46:26:441 DEBUG 84836 --- [http-nio-8086-exec-2] com.hmall.api.client.UserClient          : [UserClient#deductMoney] connection: keep-alive
+12:46:26:441 DEBUG 84836 --- [http-nio-8086-exec-2] com.hmall.api.client.UserClient          : [UserClient#deductMoney] content-length: 0
+12:46:26:441 DEBUG 84836 --- [http-nio-8086-exec-2] com.hmall.api.client.UserClient          : [UserClient#deductMoney] date: Sun, 23 Jun 2024 04:46:26 GMT
+12:46:26:441 DEBUG 84836 --- [http-nio-8086-exec-2] com.hmall.api.client.UserClient          : [UserClient#deductMoney] keep-alive: timeout=60
+12:46:26:441 DEBUG 84836 --- [http-nio-8086-exec-2] com.hmall.api.client.UserClient          : [UserClient#deductMoney] 
+12:46:26:441 DEBUG 84836 --- [http-nio-8086-exec-2] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- END HTTP (0-byte body)
+12:46:26:447 DEBUG 84836 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+12:46:26:448 DEBUG 84836 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2024-06-23T12:46:26.441836200(LocalDateTime), 1804737604856377347(Long), 0(Integer), 1(Integer)
+12:46:26:466 DEBUG 84836 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+12:46:26:469  INFO 84836 --- [http-nio-8086-exec-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+12:46:26:495  INFO 84836 --- [http-nio-8086-exec-2] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#5e5a2b74:0/SimpleConnection@688dad5c [delegate=amqp://hmall@127.0.0.1:5672//hmall, localPort= 51254]
+12:46:26:526  INFO 84836 --- [rpcDispatch_RMROLE_1_1_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299867629,branchId=36562910299867631,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-pay,applicationData=null
+12:46:26:527  INFO 84836 --- [rpcDispatch_RMROLE_1_1_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299867629 36562910299867631 jdbc:mysql://192.168.92.129:3306/hm-pay null
+12:46:26:529  INFO 84836 --- [rpcDispatch_RMROLE_1_1_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299867629-36562910299867631 was committed.
+12:46:26:529  INFO 84836 --- [rpcDispatch_RMROLE_1_1_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+12:46:26:562  INFO 84836 --- [rpcDispatch_RMROLE_1_2_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299867629,branchId=36562910299867637,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-pay,applicationData=null
+12:46:26:562  INFO 84836 --- [rpcDispatch_RMROLE_1_2_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299867629 36562910299867637 jdbc:mysql://192.168.92.129:3306/hm-pay null
+12:46:26:564  INFO 84836 --- [rpcDispatch_RMROLE_1_2_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299867629-36562910299867637 was committed.
+12:46:26:565  INFO 84836 --- [rpcDispatch_RMROLE_1_2_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+12:46:26:571  INFO 84836 --- [http-nio-8086-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.92.129:8099:36562910299867629
+12:46:26:572  INFO 84836 --- [http-nio-8086-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.92.129:8099:36562910299867629] commit status: Committed
+12:46:26:701  INFO 84836 --- [nacos-grpc-client-executor-25] com.alibaba.nacos.common.remote.client   : [9c0990b6-e63e-4652-839b-2161c8d100e7] Receive server push request, request = NotifySubscriberRequest, requestId = 360
+12:46:26:702  INFO 84836 --- [nacos-grpc-client-executor-25] com.alibaba.nacos.common.remote.client   : [9c0990b6-e63e-4652-839b-2161c8d100e7] Ack server push request, request = NotifySubscriberRequest, requestId = 360
+13:24:24:672 DEBUG 84836 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+13:24:24:698 DEBUG 84836 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1804747309326536705(Long)
+13:24:24:713 DEBUG 84836 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+13:24:24:725 DEBUG 84836 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+13:24:24:729 DEBUG 84836 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1804747313244073987(Long), 1804747309326536705(Long), 1804747313244073986(Long), 2(Long), balance(String), 26600(Integer), 5(Integer), 1(Integer), 2024-06-23T15:24:24.723138400(LocalDateTime)
+13:24:24:738 DEBUG 84836 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+13:24:48:267 DEBUG 84836 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+13:24:48:267 DEBUG 84836 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1804747410916773889(Long)
+13:24:48:269 DEBUG 84836 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+13:24:48:271 DEBUG 84836 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+13:24:48:277 DEBUG 84836 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1804747412019933186(Long), 1804747410916773889(Long), 1804747412019933185(Long), 2(Long), balance(String), 26600(Integer), 5(Integer), 1(Integer), 2024-06-23T15:24:48.270895700(LocalDateTime)
+13:24:48:281 DEBUG 84836 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+13:25:31:966 DEBUG 84836 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+13:25:31:967 DEBUG 84836 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1804747594304327681(Long)
+13:25:31:968 DEBUG 84836 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+13:25:31:970 DEBUG 84836 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+13:25:31:970 DEBUG 84836 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1804747595269074946(Long), 1804747594304327681(Long), 1804747595269074945(Long), 2(Long), balance(String), 105500(Integer), 5(Integer), 1(Integer), 2024-06-23T15:25:31.969028200(LocalDateTime)
+13:25:31:975 DEBUG 84836 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+13:25:34:718  INFO 84836 --- [http-nio-8086-exec-7] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.92.129:8099:36562910299868112]
+13:25:34:721 DEBUG 84836 --- [http-nio-8086-exec-7] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+13:25:34:723 DEBUG 84836 --- [http-nio-8086-exec-7] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1804747595269074946(Long)
+13:25:34:758 DEBUG 84836 --- [http-nio-8086-exec-7] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+13:25:34:769 DEBUG 84836 --- [http-nio-8086-exec-7] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=105500 HTTP/1.1
+13:25:34:770 DEBUG 84836 --- [http-nio-8086-exec-7] com.hmall.api.client.UserClient          : [UserClient#deductMoney] user-info: 2
+13:25:34:770 DEBUG 84836 --- [http-nio-8086-exec-7] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> END HTTP (0-byte body)
+13:25:35:034 DEBUG 84836 --- [http-nio-8086-exec-7] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200 (264ms)
+13:25:35:035 DEBUG 84836 --- [http-nio-8086-exec-7] com.hmall.api.client.UserClient          : [UserClient#deductMoney] connection: keep-alive
+13:25:35:035 DEBUG 84836 --- [http-nio-8086-exec-7] com.hmall.api.client.UserClient          : [UserClient#deductMoney] content-length: 0
+13:25:35:035 DEBUG 84836 --- [http-nio-8086-exec-7] com.hmall.api.client.UserClient          : [UserClient#deductMoney] date: Sun, 23 Jun 2024 05:25:35 GMT
+13:25:35:035 DEBUG 84836 --- [http-nio-8086-exec-7] com.hmall.api.client.UserClient          : [UserClient#deductMoney] keep-alive: timeout=60
+13:25:35:036 DEBUG 84836 --- [http-nio-8086-exec-7] com.hmall.api.client.UserClient          : [UserClient#deductMoney] 
+13:25:35:036 DEBUG 84836 --- [http-nio-8086-exec-7] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- END HTTP (0-byte body)
+13:25:35:047 DEBUG 84836 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+13:25:35:049 DEBUG 84836 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2024-06-23T13:25:35.037539700(LocalDateTime), 1804747595269074946(Long), 0(Integer), 1(Integer)
+13:25:35:074 DEBUG 84836 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+13:25:35:117  INFO 84836 --- [rpcDispatch_RMROLE_1_3_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299868112,branchId=36562910299868114,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-pay,applicationData=null
+13:25:35:117  INFO 84836 --- [rpcDispatch_RMROLE_1_3_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299868112 36562910299868114 jdbc:mysql://192.168.92.129:3306/hm-pay null
+13:25:35:120  INFO 84836 --- [rpcDispatch_RMROLE_1_3_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299868112-36562910299868114 was committed.
+13:25:35:121  INFO 84836 --- [rpcDispatch_RMROLE_1_3_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:25:35:159  INFO 84836 --- [rpcDispatch_RMROLE_1_4_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299868112,branchId=36562910299868120,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-pay,applicationData=null
+13:25:35:159  INFO 84836 --- [rpcDispatch_RMROLE_1_4_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299868112 36562910299868120 jdbc:mysql://192.168.92.129:3306/hm-pay null
+13:25:35:165  INFO 84836 --- [rpcDispatch_RMROLE_1_4_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299868112-36562910299868120 was committed.
+13:25:35:166  INFO 84836 --- [rpcDispatch_RMROLE_1_4_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:25:35:172  INFO 84836 --- [http-nio-8086-exec-7] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.92.129:8099:36562910299868112
+13:25:35:173  INFO 84836 --- [http-nio-8086-exec-7] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.92.129:8099:36562910299868112] commit status: Committed
+13:31:13:599 DEBUG 84836 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+13:31:13:599 DEBUG 84836 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1804749026197782530(Long)
+13:31:13:603 DEBUG 84836 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+13:31:13:606 DEBUG 84836 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+13:31:13:607 DEBUG 84836 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1804749028223676418(Long), 1804749026197782530(Long), 1804749028223676417(Long), 2(Long), balance(String), 95900(Integer), 5(Integer), 1(Integer), 2024-06-23T15:31:13.605348100(LocalDateTime)
+13:31:13:612 DEBUG 84836 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+13:31:28:026 DEBUG 84836 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+13:31:28:027 DEBUG 84836 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1804749087719833602(Long)
+13:31:28:029 DEBUG 84836 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+13:31:28:039 DEBUG 84836 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+13:31:28:044 DEBUG 84836 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1804749088764260354(Long), 1804749087719833602(Long), 1804749088697151489(Long), 2(Long), balance(String), 95900(Integer), 5(Integer), 1(Integer), 2024-06-23T15:31:28.030960700(LocalDateTime)
+13:31:28:052 DEBUG 84836 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+13:31:31:521  INFO 84836 --- [http-nio-8086-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.92.129:8099:36562910299868563]
+13:31:31:523 DEBUG 84836 --- [http-nio-8086-exec-1] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+13:31:31:525 DEBUG 84836 --- [http-nio-8086-exec-1] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1804749088764260354(Long)
+13:31:31:556 DEBUG 84836 --- [http-nio-8086-exec-1] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+13:31:31:559 DEBUG 84836 --- [http-nio-8086-exec-1] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=95900 HTTP/1.1
+13:31:31:561 DEBUG 84836 --- [http-nio-8086-exec-1] com.hmall.api.client.UserClient          : [UserClient#deductMoney] user-info: 2
+13:31:31:561 DEBUG 84836 --- [http-nio-8086-exec-1] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> END HTTP (0-byte body)
+13:31:31:732 DEBUG 84836 --- [http-nio-8086-exec-1] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200 (170ms)
+13:31:31:732 DEBUG 84836 --- [http-nio-8086-exec-1] com.hmall.api.client.UserClient          : [UserClient#deductMoney] connection: keep-alive
+13:31:31:732 DEBUG 84836 --- [http-nio-8086-exec-1] com.hmall.api.client.UserClient          : [UserClient#deductMoney] content-length: 0
+13:31:31:732 DEBUG 84836 --- [http-nio-8086-exec-1] com.hmall.api.client.UserClient          : [UserClient#deductMoney] date: Sun, 23 Jun 2024 05:31:31 GMT
+13:31:31:732 DEBUG 84836 --- [http-nio-8086-exec-1] com.hmall.api.client.UserClient          : [UserClient#deductMoney] keep-alive: timeout=60
+13:31:31:732 DEBUG 84836 --- [http-nio-8086-exec-1] com.hmall.api.client.UserClient          : [UserClient#deductMoney] 
+13:31:31:732 DEBUG 84836 --- [http-nio-8086-exec-1] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- END HTTP (0-byte body)
+13:31:31:739 DEBUG 84836 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+13:31:31:739 DEBUG 84836 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2024-06-23T13:31:31.732291500(LocalDateTime), 1804749088764260354(Long), 0(Integer), 1(Integer)
+13:31:31:764 DEBUG 84836 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+13:31:31:785  INFO 84836 --- [rpcDispatch_RMROLE_1_5_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299868563,branchId=36562910299868568,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-pay,applicationData=null
+13:31:31:786  INFO 84836 --- [rpcDispatch_RMROLE_1_5_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299868563 36562910299868568 jdbc:mysql://192.168.92.129:3306/hm-pay null
+13:31:31:789  INFO 84836 --- [rpcDispatch_RMROLE_1_5_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299868563-36562910299868568 was committed.
+13:31:31:789  INFO 84836 --- [rpcDispatch_RMROLE_1_5_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:31:31:815  INFO 84836 --- [rpcDispatch_RMROLE_1_6_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299868563,branchId=36562910299868574,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-pay,applicationData=null
+13:31:31:815  INFO 84836 --- [rpcDispatch_RMROLE_1_6_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299868563 36562910299868574 jdbc:mysql://192.168.92.129:3306/hm-pay null
+13:31:31:819  INFO 84836 --- [rpcDispatch_RMROLE_1_6_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299868563-36562910299868574 was committed.
+13:31:31:819  INFO 84836 --- [rpcDispatch_RMROLE_1_6_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:31:31:825  INFO 84836 --- [http-nio-8086-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.92.129:8099:36562910299868563
+13:31:31:825  INFO 84836 --- [http-nio-8086-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.92.129:8099:36562910299868563] commit status: Committed
+13:37:11:474 DEBUG 84836 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+13:37:11:477 DEBUG 84836 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1804750527003734017(Long)
+13:37:11:483 DEBUG 84836 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+13:37:11:489 DEBUG 84836 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+13:37:11:490 DEBUG 84836 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1804750529281191938(Long), 1804750527003734017(Long), 1804750529281191937(Long), 2(Long), balance(String), 95900(Integer), 5(Integer), 1(Integer), 2024-06-23T15:37:11.486800800(LocalDateTime)
+13:37:11:499 DEBUG 84836 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+13:37:13:767  INFO 84836 --- [http-nio-8086-exec-3] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.92.129:8099:36562910299868958]
+13:37:13:769 DEBUG 84836 --- [http-nio-8086-exec-3] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+13:37:13:770 DEBUG 84836 --- [http-nio-8086-exec-3] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1804750529281191938(Long)
+13:37:13:799 DEBUG 84836 --- [http-nio-8086-exec-3] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+13:37:13:802 DEBUG 84836 --- [http-nio-8086-exec-3] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=95900 HTTP/1.1
+13:37:13:803 DEBUG 84836 --- [http-nio-8086-exec-3] com.hmall.api.client.UserClient          : [UserClient#deductMoney] user-info: 2
+13:37:13:803 DEBUG 84836 --- [http-nio-8086-exec-3] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> END HTTP (0-byte body)
+13:37:13:973 DEBUG 84836 --- [http-nio-8086-exec-3] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200 (170ms)
+13:37:13:973 DEBUG 84836 --- [http-nio-8086-exec-3] com.hmall.api.client.UserClient          : [UserClient#deductMoney] connection: keep-alive
+13:37:13:973 DEBUG 84836 --- [http-nio-8086-exec-3] com.hmall.api.client.UserClient          : [UserClient#deductMoney] content-length: 0
+13:37:13:973 DEBUG 84836 --- [http-nio-8086-exec-3] com.hmall.api.client.UserClient          : [UserClient#deductMoney] date: Sun, 23 Jun 2024 05:37:13 GMT
+13:37:13:973 DEBUG 84836 --- [http-nio-8086-exec-3] com.hmall.api.client.UserClient          : [UserClient#deductMoney] keep-alive: timeout=60
+13:37:13:973 DEBUG 84836 --- [http-nio-8086-exec-3] com.hmall.api.client.UserClient          : [UserClient#deductMoney] 
+13:37:13:973 DEBUG 84836 --- [http-nio-8086-exec-3] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- END HTTP (0-byte body)
+13:37:13:979 DEBUG 84836 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+13:37:13:979 DEBUG 84836 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2024-06-23T13:37:13.973313200(LocalDateTime), 1804750529281191938(Long), 0(Integer), 1(Integer)
+13:37:14:002 DEBUG 84836 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+13:37:14:023  INFO 84836 --- [rpcDispatch_RMROLE_1_7_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299868958,branchId=36562910299868960,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-pay,applicationData=null
+13:37:14:023  INFO 84836 --- [rpcDispatch_RMROLE_1_7_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299868958 36562910299868960 jdbc:mysql://192.168.92.129:3306/hm-pay null
+13:37:14:026  INFO 84836 --- [rpcDispatch_RMROLE_1_7_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299868958-36562910299868960 was committed.
+13:37:14:026  INFO 84836 --- [rpcDispatch_RMROLE_1_7_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:37:14:055  INFO 84836 --- [rpcDispatch_RMROLE_1_8_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299868958,branchId=36562910299868968,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-pay,applicationData=null
+13:37:14:055  INFO 84836 --- [rpcDispatch_RMROLE_1_8_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299868958 36562910299868968 jdbc:mysql://192.168.92.129:3306/hm-pay null
+13:37:14:060  INFO 84836 --- [rpcDispatch_RMROLE_1_8_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299868958-36562910299868968 was committed.
+13:37:14:060  INFO 84836 --- [rpcDispatch_RMROLE_1_8_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:37:14:066  INFO 84836 --- [http-nio-8086-exec-3] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.92.129:8099:36562910299868958
+13:37:14:066  INFO 84836 --- [http-nio-8086-exec-3] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.92.129:8099:36562910299868958] commit status: Committed
+13:47:17:480 DEBUG 84836 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+13:47:17:489 DEBUG 84836 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1804753067015471105(Long)
+13:47:17:522 DEBUG 84836 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+13:47:17:546 DEBUG 84836 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+13:47:17:548 DEBUG 84836 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1804753071276879874(Long), 1804753067015471105(Long), 1804753071209771009(Long), 2(Long), balance(String), 95900(Integer), 5(Integer), 1(Integer), 2024-06-23T15:47:17.527800900(LocalDateTime)
+13:47:17:553 DEBUG 84836 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+13:58:49:904 DEBUG 84836 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+13:58:49:907 DEBUG 84836 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1804755972648890369(Long)
+13:58:49:916 DEBUG 84836 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+13:58:49:926 DEBUG 84836 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+13:58:49:926 DEBUG 84836 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1804755975312306178(Long), 1804755972648890369(Long), 1804755975312306177(Long), 2(Long), balance(String), 26600(Integer), 5(Integer), 1(Integer), 2024-06-23T15:58:49.918102600(LocalDateTime)
+13:58:49:937 DEBUG 84836 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+13:58:58:156 DEBUG 84836 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+13:58:58:156 DEBUG 84836 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1804756009000923137(Long)
+13:58:58:160 DEBUG 84836 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+13:58:58:163 DEBUG 84836 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+13:58:58:163 DEBUG 84836 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1804756009835622403(Long), 1804756009000923137(Long), 1804756009835622402(Long), 2(Long), balance(String), 26600(Integer), 5(Integer), 1(Integer), 2024-06-23T15:58:58.161041800(LocalDateTime)
+13:58:58:167 DEBUG 84836 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+13:59:00:261  INFO 84836 --- [http-nio-8086-exec-9] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.92.129:8099:36562910299869407]
+13:59:00:265 DEBUG 84836 --- [http-nio-8086-exec-9] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+13:59:00:265 DEBUG 84836 --- [http-nio-8086-exec-9] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1804756009835622403(Long)
+13:59:00:287 DEBUG 84836 --- [http-nio-8086-exec-9] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+13:59:00:292 DEBUG 84836 --- [http-nio-8086-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=26600 HTTP/1.1
+13:59:00:292 DEBUG 84836 --- [http-nio-8086-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] user-info: 2
+13:59:00:292 DEBUG 84836 --- [http-nio-8086-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> END HTTP (0-byte body)
+13:59:00:498 DEBUG 84836 --- [http-nio-8086-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200 (206ms)
+13:59:00:498 DEBUG 84836 --- [http-nio-8086-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] connection: keep-alive
+13:59:00:498 DEBUG 84836 --- [http-nio-8086-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] content-length: 0
+13:59:00:498 DEBUG 84836 --- [http-nio-8086-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] date: Sun, 23 Jun 2024 05:59:00 GMT
+13:59:00:498 DEBUG 84836 --- [http-nio-8086-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] keep-alive: timeout=60
+13:59:00:499 DEBUG 84836 --- [http-nio-8086-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] 
+13:59:00:499 DEBUG 84836 --- [http-nio-8086-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- END HTTP (0-byte body)
+13:59:00:511 DEBUG 84836 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+13:59:00:511 DEBUG 84836 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2024-06-23T13:59:00.500873600(LocalDateTime), 1804756009835622403(Long), 0(Integer), 1(Integer)
+13:59:00:545 DEBUG 84836 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+13:59:00:564  INFO 84836 --- [rpcDispatch_RMROLE_1_9_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299869407,branchId=36562910299869409,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-pay,applicationData=null
+13:59:00:565  INFO 84836 --- [rpcDispatch_RMROLE_1_9_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299869407 36562910299869409 jdbc:mysql://192.168.92.129:3306/hm-pay null
+13:59:00:566  INFO 84836 --- [rpcDispatch_RMROLE_1_9_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299869407-36562910299869409 was committed.
+13:59:00:567  INFO 84836 --- [rpcDispatch_RMROLE_1_9_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:59:00:604  INFO 84836 --- [rpcDispatch_RMROLE_1_10_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299869407,branchId=36562910299869415,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-pay,applicationData=null
+13:59:00:605  INFO 84836 --- [rpcDispatch_RMROLE_1_10_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299869407 36562910299869415 jdbc:mysql://192.168.92.129:3306/hm-pay null
+13:59:00:610  INFO 84836 --- [rpcDispatch_RMROLE_1_10_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299869407-36562910299869415 was committed.
+13:59:00:611  INFO 84836 --- [rpcDispatch_RMROLE_1_10_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:59:00:615  INFO 84836 --- [http-nio-8086-exec-9] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.92.129:8099:36562910299869407
+13:59:00:615  INFO 84836 --- [http-nio-8086-exec-9] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.92.129:8099:36562910299869407] commit status: Committed
+14:00:54:451 DEBUG 84836 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+14:00:54:454 DEBUG 84836 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1804756496093876226(Long)
+14:00:54:468 DEBUG 84836 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+14:00:54:481 DEBUG 84836 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+14:00:54:484 DEBUG 84836 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1804756497763201025(Long), 1804756496093876226(Long), 1804756497700286465(Long), 2(Long), balance(String), 26600(Integer), 5(Integer), 1(Integer), 2024-06-23T16:00:54.477263800(LocalDateTime)
+14:00:54:491 DEBUG 84836 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1

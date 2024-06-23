@@ -7,10 +7,7 @@ import com.hmall.common.utils.UserContext;
 import lombok.RequiredArgsConstructor;
 import org.springframework.amqp.core.ExchangeTypes;
 import org.springframework.amqp.core.Message;
-import org.springframework.amqp.rabbit.annotation.Exchange;
-import org.springframework.amqp.rabbit.annotation.Queue;
-import org.springframework.amqp.rabbit.annotation.QueueBinding;
-import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.amqp.rabbit.annotation.*;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -23,7 +20,7 @@ public class DeleteItemsListener {
     private final ICartService cartService;
 
     @RabbitListener(bindings = @QueueBinding(
-            value=@Queue(name="cart.clear.queue",durable = "true"),
+            value=@Queue(name="cart.clear.queue",durable = "true",arguments = @Argument(name="x-queue-mode",value = "lazy")),
             exchange = @Exchange(name="trade.topic",type = ExchangeTypes.TOPIC),
             key="order.create"
     ))
