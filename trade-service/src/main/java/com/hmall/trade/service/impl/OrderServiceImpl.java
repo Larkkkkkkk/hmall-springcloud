@@ -15,6 +15,11 @@ import com.hmall.trade.service.IOrderService;
 import io.seata.spring.annotation.GlobalLock;
 import io.seata.spring.annotation.GlobalTransactional;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessagePostProcessor;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.hmall.trade.service.IOrderDetailService;
@@ -31,11 +36,14 @@ import java.util.stream.Collectors;
  */
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements IOrderService {
 
     private final ItemClient itemClient;
     private final IOrderDetailService detailService;
     private final CartClient cartClient;
+    private final OrderMapper orderMapper;
+    private final RabbitTemplate rabbitTemplate;
 
     @Override
     //@Transactional  只能保证单个事务 如果多微服务调用不同数据库就可能导致异常
@@ -80,13 +88,27 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         }
 
         // 4.清理购物车商品
-        cartClient.deleteCartItemByIds(itemIds);
+        //4.1 原来的Openfeign直接调用
+        //cartClient.deleteCartItemByIds(itemIds);
+        //4.2 现在的Rabbitmq异步调用
+        try {
+            rabbitTemplate.convertAndSend("trade.topic", "order.create", itemIds, new MessagePostProcessor() {
+                @Override
+                public Message postProcessMessage(Message message) throws AmqpException {
+                    message.getMessageProperties().setHeader("user-info", UserContext.getUser());
+                    return message;
+                }
+            });
+        } catch (AmqpException e) {
+            log.error("清除购物车商品发送失败，要清除的商品:{}",itemIds);
+        }
         return order.getId();
     }
 
+    //修改订单状态
     @Override
     public void markOrderPaySuccess(Long orderId) {
-
+        orderMapper.updateById(orderId);
     }
 
     private List<OrderDetail> buildDetails(Long orderId, List<ItemDTO> items, Map<Long, Integer> numMap) {

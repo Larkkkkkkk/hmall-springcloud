@@ -2,6 +2,7 @@ package com.hmall.trade.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.hmall.trade.domain.po.Order;
+import org.apache.ibatis.annotations.Update;
 
 /**
  * <p>
@@ -12,5 +13,6 @@ import com.hmall.trade.domain.po.Order;
  * @since 2023-05-05
  */
 public interface OrderMapper extends BaseMapper<Order> {
-
+    @Update("update `order` set status='2' where id=#{orderId}")
+    void updateById(Long orderId);
 }

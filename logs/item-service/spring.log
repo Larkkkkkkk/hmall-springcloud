@@ -9230,3 +9230,28 @@ java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 6 millisec
 20:17:46:870  INFO 43968 --- [nacos-grpc-client-executor-1358] com.alibaba.nacos.common.remote.client   : [27ca41dc-21cc-47cf-9c9c-26bd7a0183ed] Receive server push request, request = NotifySubscriberRequest, requestId = 165
 20:17:46:870  INFO 43968 --- [nacos-grpc-client-executor-1358] com.alibaba.nacos.common.remote.client   : [27ca41dc-21cc-47cf-9c9c-26bd7a0183ed] Ack server push request, request = NotifySubscriberRequest, requestId = 165
 20:17:46:875  INFO 27640 --- [nacos-grpc-client-executor-1353] com.alibaba.nacos.common.remote.client   : [69b7e083-b8d0-49f8-bb34-3a2eee1cbc56] Ack server push request, request = NotifySubscriberRequest, requestId = 167
+00:39:42:138 DEBUG 27640 --- [http-nio-8081-exec-6] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+00:39:42:255 DEBUG 27640 --- [http-nio-8081-exec-6] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
+00:39:42:325 DEBUG 27640 --- [http-nio-8081-exec-6] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+00:39:47:112 DEBUG 43968 --- [http-nio-8083-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+00:39:47:174 DEBUG 43968 --- [http-nio-8083-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
+00:39:47:230 DEBUG 43968 --- [http-nio-8083-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+00:39:53:230 DEBUG 27640 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+00:39:53:231 DEBUG 27640 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000003145(Long)
+00:39:53:235 DEBUG 27640 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+00:39:55:988 DEBUG 43968 --- [http-nio-8083-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+00:39:55:993 DEBUG 43968 --- [http-nio-8083-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000003145(Long)
+00:39:55:995 DEBUG 43968 --- [http-nio-8083-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+00:39:59:643 DEBUG 27640 --- [http-nio-8081-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+00:39:59:646 DEBUG 27640 --- [http-nio-8081-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000003145(Long)
+00:39:59:757 DEBUG 27640 --- [http-nio-8081-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+00:40:00:184 DEBUG 43968 --- [http-nio-8083-exec-8] c.h.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+00:40:00:188 DEBUG 43968 --- [http-nio-8083-exec-8] c.h.item.mapper.ItemMapper.updateStock   : ==> Parameters: 2(Integer), 100000003145(Long)
+00:40:00:395  INFO 27640 --- [rpcDispatch_RMROLE_1_1_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299865233,branchId=36562910299865235,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-item,applicationData=null
+00:40:00:400  INFO 27640 --- [rpcDispatch_RMROLE_1_1_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299865233 36562910299865235 jdbc:mysql://192.168.92.129:3306/hm-item null
+00:40:00:403  INFO 27640 --- [rpcDispatch_RMROLE_1_1_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299865233-36562910299865235 was committed.
+00:40:00:405  INFO 27640 --- [rpcDispatch_RMROLE_1_1_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+00:40:00:456  INFO 43968 --- [rpcDispatch_RMROLE_1_1_40] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.92.129:8099:36562910299865233,branchId=36562910299865242,branchType=XA,resourceId=jdbc:mysql://192.168.92.129:3306/hm-item,applicationData=null
+00:40:00:459  INFO 43968 --- [rpcDispatch_RMROLE_1_1_40] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.92.129:8099:36562910299865233 36562910299865242 jdbc:mysql://192.168.92.129:3306/hm-item null
+00:40:00:463  INFO 43968 --- [rpcDispatch_RMROLE_1_1_40] i.s.rm.datasource.xa.ResourceManagerXA   : 192.168.92.129:8099:36562910299865233-36562910299865242 was committed.
+00:40:00:465  INFO 43968 --- [rpcDispatch_RMROLE_1_1_40] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
